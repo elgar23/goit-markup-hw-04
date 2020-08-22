@@ -1,0 +1,169 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #000000;
+    --primary-nav-color: #2196F3;
+    --white-color: #ffffff; 
+}
+
+.page {
+    background: var(--white-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif; 
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.colortext {
+    color: var(--primary-nav-color);
+
+    font-family: Raleway, cursive;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: bold;
+} 
+
+span {
+    color: var(--accent-color);
+
+    font-family: Raleway, cursive;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.site-nav .link {
+    color: var(--accent-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    font-weight: 500;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--primary-nav-color);
+
+    font-family: inherit;    
+}
+.title {
+    color: var(--white-color);
+    background: #2F303A;
+    
+}
+
+h3 {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.text {
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+}
+h4 {
+    font-size: 16px;
+    line-height: 1.19;    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+a {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.button {
+    background-color: var(--primary-nav-color);
+    color: var(--white-color);
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.9;
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.address {
+    color: var(--white-color);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+}
+.all-button:hover, 
+.all-button:focus {
+   background-color: var(--primary-nav-color); 
+   color: var(--white-color);
+
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    font-weight: 500;
+}
+.portfolio-button {
+    background: #F5F4FA;
+    color: var(--primary-text-color);
+
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    font-weight: 500;
+}
+
+h1 {
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    line-height: 36px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.address-bg {
+    background: #2F303A;
+} 
