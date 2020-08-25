@@ -4,6 +4,7 @@
     --accent-color: #000000;
     --primary-nav-color: #2196F3;
     --white-color: #ffffff; 
+    --color-bg: #2F303A;
 }
 
 .page {
@@ -56,8 +57,7 @@ span {
 }
 .title {
     color: var(--white-color);
-    background: #2F303A;
-    
+    background: var(--color-bg);
 }
 
 h3 {
@@ -140,6 +140,8 @@ a {
     line-height: 1.63;
     text-align: center;
     font-weight: 500;
+
+    
 }
 .portfolio-button {
     background: #F5F4FA;
@@ -165,5 +167,5 @@ p {
     color: var(--title-text-color);
 }
 .address-bg {
-    background: #2F303A;
+    background: var(--color-bg);
 } 
