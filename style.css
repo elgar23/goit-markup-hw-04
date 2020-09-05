@@ -484,3 +484,82 @@ a {
   align-items: center;
   border-radius: 50%;
 }
+.partners-list {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-one {
+  width: 44px;
+  height: 49px;
+  fill: currentColor;
+}
+
+.logo-two {
+  width: 40px;
+  height: 52px;
+  fill: currentColor;
+}
+
+.logo-three {
+  width: 41px;
+  height: 43px;
+  fill: currentColor;
+}
+
+.logo-four {
+  width: 80px;
+  height: 42px;
+  fill: currentColor;
+}
+
+.logo-five {
+  width: 59px;
+  height: 47px;
+  fill: currentColor;
+}
+
+.logo-six {
+  width: 88px;
+  height: 45px;
+  fill: currentColor;
+}
+
+.partner-list {
+  margin: 0;
+  width: calc((100% - 30px * 5) / 6);
+  height: 90px;
+}
+
+.partner-list:last-child {
+  margin-right: 0px;
+}
+
+/* .logo-link:hover .partner-list {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  fill: var(--accent-color);
+} */
+
+.logo-link:hover svg {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+
+.logo-link:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.logo-link {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
