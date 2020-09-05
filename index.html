@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
   <body>
     <header class="header">
@@ -34,7 +40,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="tel">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -54,32 +60,41 @@
       </section>
 
       <div class="container">
+        <ul class="card flexbox">
+          <li class="link-item"></li>
+          <li class="link-item"></li>
+          <li class="link-item"></li>
+          <li class="link-item"></li>
+        </ul>
+      </div>
+
+      <div class="container">
         <!-- Особенности -->
         <section class="features section">
           <h2 class="is-hidden">Особенности</h2>
           <ul class="list flexbox">
-            <li class="item section">
+            <li class="item-skill section icon-antena">
               <h3 class="title-text">Внимание к деталям</h3>
               <p class="paragraf">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item section">
+            <li class="item-skill section icon-clock">
               <h3 class="title-text">Пунктуальность</h3>
               <p class="paragraf">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item section">
+            <li class="item-skill section icon-diagram">
               <h3 class="title-text">Планирование</h3>
               <p class="paragraf">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item section">
+            <li class="item-skill section icon-astronavt">
               <h3 class="title-text">Современные технологии</h3>
               <p class="paragraf">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -94,16 +109,13 @@
           <h2 class="title-text">Чем мы занимаемся</h2>
           <ul class="list flexbox">
             <li class="item">
-              <img src="./img/img1.png" alt="Пишем код" />
+              <img src="./img/img1.png" alt="" />
             </li>
             <li class="item">
-              <img
-                src="./img/img2.png"
-                alt="Разрабатываем приложения для телефона"
-              />
+              <img src="./img/img2.png" alt="" />
             </li>
             <li class="item">
-              <img src="./img/img3.png" alt="Создаем дизайн" />
+              <img src="./img/img3.png" alt="" />
             </li>
           </ul>
         </section>
@@ -115,38 +127,74 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list flexbox">
             <li class="item">
-              <img
-                src="./img/foto1.png"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <img src="./img/foto1.png" alt="Игорь Демьяненко" width="270" />
               <h3 class="title-text">Игорь Демьяненко</h3>
               <p class="paragraf">Product Designer</p>
+              <ul class="list flexbox social">
+                <li class="social-list">
+                  <a
+                    class="social-link flex"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram address"
+                  >
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a
+                    class="social-link flex"
+                    href="https://twitter.com/home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter address"
+                  >
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a class="social-link flex" href="https://www.facebook.com/">
+                    <svg class="icon">
+                      <use
+                        href="./svg/sprite.svg#facebook"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook address"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list">
+                  <a class="social-link flex" href="https://www.linkedin.com/">
+                    <svg class="icon">
+                      <use
+                        href="./svg/sprite.svg#linkedin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Linkedin address"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/foto2.png"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <img src="./img/foto2.png" alt="Ольга Репина" width="270" />
               <h3 class="title-text">Ольга Репина</h3>
               <p class="paragraf">Frontend Developer</p>
             </li>
             <li class="item">
-              <img
-                src="./img/foto3.png"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <img src="./img/foto3.png" alt="Николай Тарасов" width="270" />
               <h3 class="title-text">Николай Тарасов</h3>
               <p class="paragraf">Marketing</p>
             </li>
             <li class="item">
-              <img
-                src="./img/foto4.png"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <img src="./img/foto4.png" alt="Михаил Ермаков" width="270" />
               <h3 class="title-text">Михаил Ермаков</h3>
               <p class="paragraf">UI Designer</p>
             </li>
