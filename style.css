@@ -472,7 +472,7 @@ a {
 }
 
 .social-link:hover .icon {
-  fill: var(--primary-white-color);
+  fill: var(--main-color);
 }
 
 .social-link {
