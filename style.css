@@ -102,6 +102,8 @@ html {
 }
 
 .our-team {
+  margin-top: 94px;
+  margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--background-color);
@@ -161,6 +163,9 @@ html {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+.item {
+  background-color: var(--main-color);
 }
 
 .cards .item:nth-child(3n) {
@@ -333,12 +338,12 @@ a {
   text-align: center;
 }
 
-.our-team .title {
+.our-team {
   font-weight: 500;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .our-team .paragraf {
@@ -354,6 +359,14 @@ a {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 
 /* страница Портфолио */

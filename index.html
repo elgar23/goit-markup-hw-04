@@ -68,9 +68,9 @@
         </ul>
       </div>
 
-      <div class="container">
-        <!-- Особенности -->
-        <section class="features section">
+      <!-- Особенности -->
+      <section class="features section">
+        <div class="container">
           <h2 class="is-hidden">Особенности</h2>
           <ul class="list flexbox">
             <li class="item-skill section icon-antena">
@@ -102,11 +102,13 @@
               </p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- Чем мы занимаемся -->
-        <section class="our-work section">
-          <h2 class="title-text">Чем мы занимаемся</h2>
+      <!-- Чем мы занимаемся -->
+      <section class="our-work section">
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list flexbox">
             <li class="item">
               <img src="./img/img1.png" alt="" />
@@ -118,8 +120,8 @@
               <img src="./img/img3.png" alt="" />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- Наша команда -->
       <section class="our-team section">
@@ -145,15 +147,14 @@
                   </a>
                 </li>
                 <li class="social-list">
-                  <a
-                    class="social-link flex"
-                    href="https://twitter.com/home"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Twitter address"
-                  >
+                  <a class="social-link flex" href="https://twitter.com/home">
                     <svg class="icon">
-                      <use href="./svg/sprite.svg#twitter"></use>
+                      <use
+                        href="./svg/sprite.svg#twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook address"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -208,7 +209,7 @@
             <li class="partner-list">
               <a class="logo-link" href="">
                 <svg class="logo-one">
-                  <use xlink:href="./svg/sprite.svg#logo1"></use>
+                  <use xlink:href=".\svg\sprite.svg#logo1"></use>
                 </svg>
               </a>
             </li>
