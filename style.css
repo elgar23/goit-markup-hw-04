@@ -501,6 +501,7 @@ a {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .logo-one {
@@ -548,13 +549,6 @@ a {
 .partner-list:last-child {
   margin-right: 0px;
 }
-
-/* .logo-link:hover .partner-list {
-  border: 1px solid var(--accent-color);
-  cursor: pointer;
-  fill: var(--accent-color);
-} */
-
 .logo-link:hover svg {
   cursor: pointer;
   fill: var(--accent-color);
@@ -575,4 +569,52 @@ a {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+}
+/* icon footer*/
+.footer-social .social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link:hover {
+  background-color: var(--accent-color);
+}
+
+.join-link:hover .icon {
+  fill: var(--main-color);
+}
+
+h5 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px;
+  text-align: center;
+}
+
+.join {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.join-link {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social {
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.link-tel .link-mail {
+  display: block;
 }
