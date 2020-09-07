@@ -10,6 +10,12 @@ html {
   --accent-color: #2196f3;
   --background-color: #f5f4fa;
 }
+.links-footer {
+  color: var(--text-color);
+}
+.mail-footer {
+  color: var(--text-color);
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -217,7 +223,7 @@ a {
 .text-hero,
 .logo-footer,
 .address-footer,
-.links-footer .link {
+.link {
   color: var(--main-color);
 }
 
@@ -235,7 +241,9 @@ a {
   color: var(--title-color);
 }
 
-.links-header .link {
+.links-header .link,
+.mail-link,
+.tel-link {
   color: var(--text-color);
 }
 
@@ -247,6 +255,44 @@ a {
 .links-footer :hover,
 .links-footer :focus {
   color: var(--accent-color);
+}
+/* header icon*/
+.icon-mail {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(./svg/xx/sprite.svg#envelope);
+  background-size: contain;
+  fill: currentColor;
+}
+.icon-tel {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(./svg/xx/sprite.svg#smartphone);
+  background-size: contain;
+  fill: currentColor;
+}
+
+/*.tel:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+
+.mail:hover svg {
+  cursor: pointer;
+  fill: var(--accent-color);
+}*/
+.icon-mail {
+  fill: currentColor;
+}
+.mail .link:hover,
+.mail .link:focus {
+  fill: var(--accent-color);
 }
 
 .nav-menu .current-link {
@@ -401,25 +447,7 @@ a {
   background-size: cover;
   background-color: var(--secondary-color);
 }
-/* header icon*/
-.mail::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(./img/envelope.png);
-  background-size: contain;
-}
-.tel::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(./img/Vector.png);
-  background-size: contain;
-}
+
 /*карточки*/
 
 .item-skill::before {
@@ -446,19 +474,7 @@ a {
 .item-skill.icon-astronavt::before {
   background-image: url(./img/astronaut.png);
 }
-/*.link-item {
-     list-style: none;
-  
-   }
-   .link-item:not(:last-child) {
-    list-style: none;
-    margin-right: 30px;
-  }
-  .card {
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-  }*/
+
 .icon {
   width: 20px;
   height: 20px;
@@ -582,7 +598,9 @@ a {
 .join-link:hover .icon {
   fill: var(--main-color);
 }
-
+.join-link .icon {
+  fill: var(--main-color);
+}
 h5 {
   color: var(--main-color);
   font-weight: bold;
@@ -591,7 +609,6 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
-  text-align: center;
 }
 
 .join {
@@ -602,8 +619,8 @@ h5 {
 .join-link {
   display: flex;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -615,6 +632,16 @@ h5 {
   justify-content: space-around;
   margin-top: 20px;
 }
-.link-tel .link-mail {
-  display: block;
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.address {
+  margin-right: 70px;
+}
+.mail-link .tel-link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
