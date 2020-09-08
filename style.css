@@ -173,6 +173,11 @@ html {
 .item {
   background-color: var(--main-color);
 }
+.item:hover,
+.item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .cards .item:nth-child(3n) {
   margin-right: 0px;
@@ -278,7 +283,7 @@ a {
   fill: currentColor;
 }
 
-/*.tel:hover {
+.tel:hover svg {
   cursor: pointer;
   fill: var(--accent-color);
 }
@@ -286,17 +291,10 @@ a {
 .mail:hover svg {
   cursor: pointer;
   fill: var(--accent-color);
-}*/
-.icon-mail {
-  fill: currentColor;
-}
-.mail .link:hover,
-.mail .link:focus {
-  fill: var(--accent-color);
 }
 
 .nav-menu .current-link {
-  color: var(--accent-color);
+  color: var(--title-color);
 }
 
 .logo {

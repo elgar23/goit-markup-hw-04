@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"/>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
   <body>
     <header class="header">
@@ -19,10 +25,10 @@
           </a>
           <ul class="list text-nav nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="link current-link">Студия</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="link current-link">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="nav-item"><a href="#" class="link">Контакты</a></li>
           </ul>
@@ -30,12 +36,20 @@
 
         <ul class="list links-header flexbox">
           <li class="mail">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="icon-mail">
+                <use href="./svg/xx/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          <li class="tel">
+            <a class="link" href="tel:+380961111111">
+              <svg class="icon-tel">
+                <use href="./svg/xx/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -109,10 +123,7 @@
                 </div>
               </li>
               <li class="item">
-                <img
-                  src="./img/borders.jpg"
-                  alt="Inspiration has no Borders"
-                />
+                <img src="./img/borders.jpg" alt="Inspiration has no Borders" />
                 <div class="text-card">
                   <h2 class="title-text">Inspiration has no Borders</h2>
                   <p class="paragraf">Веб-сайт</p>
@@ -145,25 +156,62 @@
       </section>
     </main>
 
+    <!-- Контакты -->
     <footer class="section-footer">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          ><span class="accent-text">Web</span
-          ><span class="logo-footer">Studio</span>
-        </a>
-        <address class="address-footer">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
+      <div class="footer container">
+        <div class="address">
+          <a href="./index.html" class="logo"
+            ><span class="accent-text">Web</span
+            ><span class="logo-footer">Studio</span></a
+          >
+          <address class="address-footer">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
 
-        <!-- Контакты -->
-        <ul class="list links-footer">
-          <li>
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-          </li>
-        </ul>
+          <ul class="list links-footer">
+            <li class="mail-footer">
+              <a href="mailto:info@devstudio.com" class="mail-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="tel-footer">
+              <a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="join">
+          <h5>присоединяйтесь</h5>
+          <ul class="list flexbox footer-social">
+            <li class="social-list">
+              <a class="join-link flex" href="https://www.instagram.com/">
+                <svg class="icon">
+                  <use href="./svg/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a class="join-link flex" href="https://twitter.com/home">
+                <svg class="icon">
+                  <use href="./svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a class="join-link flex" href="https://www.facebook.com/">
+                <svg class="icon">
+                  <use href="./svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a class="join-link flex" href="https://www.linkedin.com/">
+                <svg class="icon">
+                  <use href="./svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
