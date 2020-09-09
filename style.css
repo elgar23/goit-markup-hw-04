@@ -79,7 +79,7 @@ html {
 
 .features,
 .our-work {
-  padding-top: 94px;
+  margin-top: 94px;
 }
 
 .our-work .title-text {
@@ -103,20 +103,15 @@ html {
   margin-right: 30px;
 }
 
-.our-team .title {
+.title {
   margin: 0;
 }
 
 .our-team {
   margin-top: 94px;
-  margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--background-color);
-}
-
-.our-team .list {
-  margin-top: 50px;
 }
 
 .section-footer .container {
@@ -213,8 +208,8 @@ body {
 
 .list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 button {
@@ -291,6 +286,10 @@ a {
 .mail:hover svg {
   cursor: pointer;
   fill: var(--accent-color);
+}
+.link {
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu .current-link {
@@ -374,8 +373,7 @@ a {
 }
 
 /* страница Студия */
-.our-work,
-.our-team {
+.our-work {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -396,13 +394,39 @@ a {
   line-height: 1.19;
   text-align: center;
 }
+.paragraf {
+  margin: 0;
+}
 
-.our-team .title-text {
-  font-style: normal;
+.title-text {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.title-text-skill {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.title-text-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  color: var(--title-color);
 }
 .title {
   font-weight: bold;
@@ -411,6 +435,12 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+.list-team {
+  list-style: none;
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 0;
 }
 
 /* страница Портфолио */
@@ -472,6 +502,14 @@ a {
 .item-skill.icon-astronavt::before {
   background-image: url(./img/astronaut.png);
 }
+.item-skill {
+  margin-right: 30px;
+  padding: 0;
+  text-align: space-between;
+}
+.item-skill:last-child {
+  margin-right: 0px;
+}
 
 .icon {
   width: 20px;
@@ -488,9 +526,9 @@ a {
 .social {
   align-items: center;
   justify-content: space-around;
-  padding-top: 30px;
+  padding-top: 16px;
   padding-bottom: 30px;
-  padding-right: 32px;
+  padding-right: 30px;
   padding-left: 32px;
 }
 
@@ -510,6 +548,24 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.partners-client {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  padding-top: 50px;
+}
+.title-client {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+
+  padding-top: 94px;
+  margin: 0;
 }
 .partners-list {
   box-sizing: border-box;
